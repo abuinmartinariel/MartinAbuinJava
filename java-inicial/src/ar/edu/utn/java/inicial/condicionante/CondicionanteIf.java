@@ -5,7 +5,7 @@ public class CondicionanteIf {
     public static void main(String[] args) {
 		
     	
-    	int valor = 0;
+    	int valor = -7;
     	
     	
     	if(valor < 0) {
