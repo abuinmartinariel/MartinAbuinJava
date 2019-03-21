@@ -19,6 +19,7 @@ public class CondicionanteIf {
     	else {
     		System.out.println("Valor es cero");
                 }
+    	System.out.println("El valor es: " + valor + "<- ese fue valor ");
     	
 }
 }
