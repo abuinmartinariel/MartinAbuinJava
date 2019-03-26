@@ -5,17 +5,17 @@ public class TestSwitchCase {
 	public static void main(String[] args) {
 
 		
-		char color= 'R';
+		char color= 'r';
 		
 		
 		switch (color) {
-	case 'R': 
+	case 'R': case'r':
 		System.out.println("Color ROJO");
 	    break;
-	case 'B': 
+	case 'B': case 'b': 
 		System.out.println("Color AZUL");
 		break;
-	case 'Y': 
+	case 'Y': case 'y': 
 		System.out.println("Color AMARILLO");
 		break;
 	default:
