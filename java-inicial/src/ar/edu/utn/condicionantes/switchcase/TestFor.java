@@ -17,7 +17,7 @@ public class TestFor {
 		// bloque de codigo (seccion 4)
 		// la tercera seccion es una accion que se realiza
 		// una vez finalizadas las acciones de la seccion 4
-		for(int cantidad_de_veces = 0; cantidad_de_veces < 5 ; cantidad_de_veces++) {
+		for(int cantidad_de_veces = 1; cantidad_de_veces < 5 ; cantidad_de_veces++) {
 			System.out.println("++"+cantidad_de_veces);
 		}
 
