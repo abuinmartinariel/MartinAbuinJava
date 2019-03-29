@@ -10,6 +10,11 @@ public class HolaMundo {
 		//for(int i=1;i<=22;i++) { Creciente
 		  
 		   for(int i=22;i>1;i--) {
+			   
+			   if(i%2==0) {
+				   
+				   System.out.println("Hola Mundo " + i + " veces");
+			   }
 		
 			/*
 			 * Operador trinario:
