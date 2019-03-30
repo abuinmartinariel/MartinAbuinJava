@@ -49,7 +49,14 @@ public class Galleta {
     		System.out.println(("NO SE PUEDE MODIFICAR EL ELEMENTO"));
     	}
 
+    	
+    	
+   public double getPrecio() {
+	return precio;
+}
 
+   
+   
 }
 
 	public String getDescripcion() {
@@ -64,10 +71,5 @@ public class Galleta {
 	}
 
 
- 
-    
-    
-
-
-
+	
 }

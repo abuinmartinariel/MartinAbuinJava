@@ -30,7 +30,21 @@ public class Test {
 	
 	  System.out.println("desripcion de la " + g1.getNombre() + ": " + g1.getDescripcion());
 	  
+	  System.out.println(g1.getDescripcion());
 	  
+	  
+	  
+	  System.out.println(" ======================== FABTICA DE GALLETAS ============================");
+	  
+	  //cREO EL OBJETO DE LA FABRTICA
+	  
+	  FabricaControlador fc=new FabricaControlador();
+	  
+	  
+	  Galleta chocolina = fc.creoGalletita("Chocolina,"Ideal para la chocotorta",precio);"
+	  
+	  Galleta opera = fc.creoGalletita("Pepito,"Chispas de chocolate",precio);"
 	}
 
+	 Galleta listaGalleta = new Galleta
 }
