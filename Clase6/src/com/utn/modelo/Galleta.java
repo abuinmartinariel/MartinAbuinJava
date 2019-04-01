@@ -11,9 +11,6 @@ public class Galleta {
 	 */
 	
 	
-	// private String nombre;
-	// private String descripcion;
-	
 	// ENCAPSULAMIENTO
 	
 	/* 
@@ -46,30 +43,26 @@ public class Galleta {
     		this.nombre=nombreParam;
     	}
     	else {
-    		System.out.println(("NO SE PUEDE MODIFICAR EL ELEMENTO"));
+    		System.out.println(("NO SE PUEDE MODIFICAR EL ELEMENTO!"));
     	}
-
+    }
     	
     	
-   public double getPrecio() {
-	return precio;
-}
+	public double getPrecio() {
+		return precio;
+	}
 
-   
-   
-}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
 
 	public String getDescripcion() {
 		return descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
-		
-	//this hace referencia a la misma clase	
-		
 		this.descripcion = descripcion;
 	}
-
-
 	
-}
+    }
+    
