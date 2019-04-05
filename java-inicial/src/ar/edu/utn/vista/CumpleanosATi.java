@@ -7,8 +7,8 @@ public class CumpleanosATi {
 	public static void main(String[] args) {
        Scanner scan = new Scanner (System.in);
     
-       int dia = ingresoDato(scan, "dia", 29);
-       System.out.println(dia);
+       int valor = ingresoDato(scan, "dia", 29);
+       System.out.println(valor);
        int mes = ingresoDato(scan, "mes", 12);
     	   //TODO Usar el metodo ingresoDato para que soporte la
     	   // condicion de menor a ... cuando el momento es año
@@ -25,14 +25,21 @@ public class CumpleanosATi {
 	private static int ingresoDato(Scanner scan, String momento, int valorMaximo) {
 		String mensaje = "Ingrese %s de su cumple (valor maximo %d)";
 		System.out.println("Ingrese " + momento +" de su cumple");
-		int dia = scan.nextInt();
-		while(dia > valorMaximo) {
+		int valor = scan.nextInt();
+		if (momento == "año") {
+			while(valor < valorMaximo) {
+				System.out.println(String.format(mensaje, momento,valorMaximo));
+				valor = scan.nextInt();
+
+		}
+		} 
+		while(valor > valorMaximo) {
 			System.out.println(String.format(mensaje, momento,valorMaximo));
-			dia = scan.nextInt();
+			valor = scan.nextInt();
 		}
 		
 		
-		return dia;
+		return valor;
 	}
 
 }
