@@ -22,9 +22,11 @@ public class CumpleanosATi {
        
        int dia = ingresoDato(scan, "dia",1, dias[mes-1]);
        System.out.println(dia);
+       per.setDia(dia);
        
        int anio = ingresoDato(scan, "año", 2000,2018);
        System.out.println(anio);
+       per.setAnio(anio);
    
     	   //TODO Usar el metodo ingresoDato para que soporte la
     	   // condicion de menor a ... cuando el momento es año
@@ -32,16 +34,29 @@ public class CumpleanosATi {
     	   //TODO Solicitar al usuario el nombre
            System.out.println("Ingrese su nombre: ");
            String nombre = scan.next();      
-          
+           per.setNombre(nombre);
            //TODO mostrar el siguiente texto:
     	   // <nombre>: tu cumple es el <dia>/<mes>/<año>
        personas[i] = per;   
        System.out.println(nombre + ":" + dia + "/" + mes + "/" + anio);
     	      
        }
-       
-      
+       System.out.println("----------------------");
+     for (Persona persona : personas) {
+		persona.identificarse();
 	}
+     System.out.println("--- Busco el mas joven ---");
+     int menor = Integer.MAX_VALUE;
+     Persona masJoven = null;
+	 for (Persona x : personas) {
+	    if(x.getEdad() < menor) {
+	    	menor = x.getEdad();
+	    	masJoven = x;
+	    	}
+	}
+     System.out.println("El mas joven es: ");
+     masJoven.identificarse();
+}
 	
 	
 	private static int ingresoDato(Scanner scan, 

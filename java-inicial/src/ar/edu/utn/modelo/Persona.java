@@ -6,6 +6,8 @@ public class Persona {
 	private int mes;
 	private int anio;
 	
+	
+	
 	String nombre;
 	public String getNombre() {
 		return nombre;
@@ -33,8 +35,16 @@ public class Persona {
 	}
 	
 	
-	
-	
-	
+	public void identificarse() {
+	     // mostrar/imprimir nombre y edad
+		
+		System.out.println(getNombre() + ":" + (2019 - getAnio()));
+		
+	}
 
+	
+	public int getEdad() {
+		
+		return 2019 - this.anio;
+	}
 }
