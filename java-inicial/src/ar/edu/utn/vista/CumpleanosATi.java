@@ -56,8 +56,21 @@ public class CumpleanosATi {
 	}
      System.out.println("El mas joven es: ");
      masJoven.identificarse();
+     System.out.println("Hay alguien de 13 años en la sala?" + existeElemento(13,personas));
 }
 	
+	private static boolean existeElemento(int edad, Persona[] personas)
+	{
+		for (Persona persona : personas) {
+			if (persona.getEdad() == edad)
+                   {  return true;
+                	   
+                   }
+		}
+		
+		return false;
+		
+	}
 	
 	private static int ingresoDato(Scanner scan, 
 			                       String momento, 
