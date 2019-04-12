@@ -3,12 +3,12 @@ package ar.edu.utn.controlador;
 import ar.edu.utn.modelo.Entrenador;
 import ar.edu.utn.modelo.ListaEntrenadores;
 
-public class Gimnasio {
+public class BoxeadorControlador {
 	
 	
 private Entrenador[] listaEntrenadores;
 
-public Gimnasio(){
+public BoxeadorControlador(){
 	
 	this.listaEntrenadores = new Entrenador[4];
 	this.listaEntrenadores[0] = new Entrenador(ListaEntrenadores.JUAN);
