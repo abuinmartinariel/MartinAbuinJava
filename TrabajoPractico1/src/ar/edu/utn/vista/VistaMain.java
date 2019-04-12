@@ -10,9 +10,9 @@ public class VistaMain {
 	public static void main(String[] args) {
 		
     Scanner scan = new Scanner(System.in);
-	Boxeador boxeadores[] = new Boxeador[3];
+	Boxeador boxeadores[] = new Boxeador[25];
 		
-		for (int i = 0; i < 3; i++){
+		for (int i = 0; i < 25; i++){
 			
 			
 			Boxeador box = new Boxeador();
@@ -33,13 +33,17 @@ public class VistaMain {
 			
 		}
 		
-		    for (int i=0 ; i<3 ; i++) {
+		  /* Puebo si me los toma y clasifica
+		        for (int i=0 ; i<3 ; i++) {
 		    	
 		    	System.out.println("Nombre: " + boxeadores[i].getNombre());
 		    	System.out.println("Peso: " + boxeadores[i].getPeso());
 		    	System.out.println("Categoria: " + boxeadores[i].getCategoria().toString());
 		    	
 		    }
+	     */
+	
+	
 	}
 
 }
