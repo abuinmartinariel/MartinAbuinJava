@@ -1,6 +1,6 @@
 package ar.edu.utn.controlador;
 
-import ar.utn.edu.modelo.Categoria;
+import ar.edu.utn.modelo.Categoria;
 
 public class Clasificador {
 

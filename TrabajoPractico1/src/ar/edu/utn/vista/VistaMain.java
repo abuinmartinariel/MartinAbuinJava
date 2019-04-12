@@ -2,7 +2,7 @@ package ar.edu.utn.vista;
 
 import java.util.Scanner;
 
-import ar.utn.edu.modelo.Boxeador;
+import ar.edu.utn.modelo.Boxeador;
 
 public class VistaMain {
 	

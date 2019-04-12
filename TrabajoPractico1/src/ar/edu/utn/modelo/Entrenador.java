@@ -1,4 +1,4 @@
-package ar.utn.edu.modelo;
+package ar.edu.utn.modelo;
 
 public class Entrenador {
 	
