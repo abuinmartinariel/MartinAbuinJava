@@ -33,7 +33,7 @@ public class VistaMain {
 			
 		}
 		
-		  /* Puebo si me los toma y clasifica
+		  /* Pruebo si me los toma y clasifica
 		        for (int i=0 ; i<3 ; i++) {
 		    	
 		    	System.out.println("Nombre: " + boxeadores[i].getNombre());
