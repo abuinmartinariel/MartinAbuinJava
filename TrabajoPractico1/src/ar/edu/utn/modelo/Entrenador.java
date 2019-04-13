@@ -5,6 +5,7 @@ public class Entrenador {
 	private ListaEntrenadores nombre;
 	private Boxeador listaBoxeadores[];
 	
+	
 	public Entrenador(ListaEntrenadores nombre){
 		
 		this.listaBoxeadores = new Boxeador[5];
