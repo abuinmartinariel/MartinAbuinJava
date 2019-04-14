@@ -6,7 +6,7 @@ public class TestClasificador {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(Clasificador.getCategoria(46).toString());
+		System.out.println(Clasificador.getCategoria(46.23).toString());
 		System.out.println(Clasificador.getCategoria(49).toString());
         System.out.println(Clasificador.getCategoria(53).toString());
         System.out.println(Clasificador.getCategoria(56).toString());

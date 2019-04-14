@@ -5,7 +5,7 @@ import ar.edu.utn.controlador.Clasificador;
 public class Boxeador {
 	
 	private String nombre;
-	private float peso;
+	private double peso;
 	private Categoria categoria;
 	
 	
@@ -15,17 +15,17 @@ public class Boxeador {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public float getPeso() {
+	public double getPeso() {
 		return peso;
 	}
-	public void setPeso(float peso) {
+	public void setPeso(double peso) {
 		this.peso = peso;
 	}
 	public Categoria getCategoria() {
 		return categoria;
 	}
-	public void setCategoria(float peso) {
-		this.categoria = Clasificador.getCategoria(peso);
+	public void setCategoria(double peso) {
+		this.categoria = Clasificador.getCategoria(peso);  
 	}
 	
 	

@@ -5,7 +5,7 @@ import ar.edu.utn.modelo.Categoria;
 public class Clasificador {
 
 	
-public static Categoria getCategoria(float peso){
+public static Categoria getCategoria(double peso){
 	
 	 
 	if(peso >= 48 && peso < 52.163){
