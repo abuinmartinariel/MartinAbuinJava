@@ -28,7 +28,7 @@ public class Boxeador {
 		this.categoria = Clasificador.getCategoria(peso);  
 	}
 	
-	
+
 	
 
 }

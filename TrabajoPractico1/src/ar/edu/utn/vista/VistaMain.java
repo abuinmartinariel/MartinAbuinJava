@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 import ar.edu.utn.controlador.EntrenadoresControlador;
 import ar.edu.utn.modelo.Boxeador;
+import ar.edu.utn.modelo.Categoria;
 
 public class VistaMain {
 	
 	public static void main(String[] args) {
 		
     Scanner scan = new Scanner(System.in);
-	Boxeador boxeadores[] = new Boxeador[25];
-	Boxeador rechazados[] = new Boxeador[5];
+	Boxeador boxeadores[] = new Boxeador[5];
 		
-		for (int i = 0; i < 25; i++){
+		for (int i = 0; i < 5; i++){
 			
 			
 			Boxeador box = new Boxeador();
@@ -36,41 +36,43 @@ public class VistaMain {
 		}
 		
          EntrenadoresControlador ec = new EntrenadoresControlador();
-			  int j = 0;
-			  int m = 0;
+         
+         for(int i =0 ; i < 5 ; i++){
+         
+         if(boxeadores[i].getCategoria() == Categoria.MOSCA || boxeadores[i].getCategoria() == Categoria.GALLO ){
+        	 
+        ec.asignacionBox(boxeadores[i], 0);
+         
+         }
+         else if (boxeadores[i].getCategoria() == Categoria.PLUMA || boxeadores[i].getCategoria() == Categoria.LIGERO ){
+        	 
+        	 ec.asignacionBox(boxeadores[i], 1);
+        	 
+        	 
+         }
+          else if (boxeadores[i].getCategoria() == Categoria.WELTER || boxeadores[i].getCategoria() == Categoria.MEDIANO ){
+        	 
+        	 ec.asignacionBox(boxeadores[i], 2);
+        	 
+        	 
+         }
+        	 
+          else{
+        	  
+         	 ec.asignacionBox(boxeadores[i], 3);
+
+        	  
+        	  
+          }
               
-			  for (int i = 0 ; i < 25 ; i ++){
-	
-	            if(i < 20){
-				  
-				m++;   
-	            
-	            System.out.println("============");
-	            System.out.println("Nombre: " + boxeadores[i].getNombre());
-		    	System.out.println("Peso: " + boxeadores[i].getPeso());
-		    	System.out.println("Categoria: " + boxeadores[i].getCategoria().toString());
-	            
-	            
-	            
-	            
-	            ec.asignacionBox(boxeadores[i], j);
-        	   
-        	   if(m % 5 == 0){
-        	   j++;
-        	    }
-        
-	         }
-	            else{
-	            	
-	            	for(int n = 0 ; n < 5 ; n++){
-	            	rechazados[n] = boxeadores[i];
-	            }
-	            
-	                System.out.println("============");
-	            	System.out.println("Boxeador: " + boxeadores[i].getNombre() + " rechazado");	
-	            	
-	            }
-			  }
+         }
+         
+         for(int i = 0 ; i < 4;  i++ ){
+         ec.imprimirResultado(i);
+    
+         
+         
+         }
 	}
 }
 

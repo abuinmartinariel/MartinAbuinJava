@@ -8,7 +8,7 @@ public class Clasificador {
 public static Categoria getCategoria(double peso){
 	
 	 
-	if(peso >= 48 && peso < 52.163){
+	if(peso > 0 && peso < 52.163){
 		
 	    return Categoria.MOSCA;
 	}
@@ -40,7 +40,7 @@ public static Categoria getCategoria(double peso){
 			return Categoria.PESADO;
 		  }
 	 	
-	return Categoria.RECHAZADO;
+	return null;
 }
 
 
