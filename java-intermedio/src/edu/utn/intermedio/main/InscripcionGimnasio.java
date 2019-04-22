@@ -11,6 +11,8 @@ public class InscripcionGimnasio {
 		Boxeador box = new Boxeador("Pepe");
 		Boxeador box2 = new Boxeador("Pipo");
 		box2.setCategoria(Categoria.pesado);
+		box2.setCantidadMinutosEntrenamiento(30);
+		
 		Boxeador box3 = new Boxeador("Peppo");
 		
 		Entrenador ent = new Entrenador("Juan", Categoria.mediano, 
@@ -31,6 +33,8 @@ public class InscripcionGimnasio {
 		
 		System.out.println("Mostrar boxeadores:");
 		ent.imprimirBoxeadores();
+		
+		box2.entrenarse();
 
 	}
 
