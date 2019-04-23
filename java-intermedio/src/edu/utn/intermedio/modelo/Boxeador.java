@@ -2,7 +2,7 @@ package edu.utn.intermedio.modelo;
 
 import java.time.LocalDate;
 
-public class Boxeador extends Persona {
+public class Boxeador extends Persona implements Identificable {
 	
 	private Categoria categoria;
 	private int cantidadMinutosEntrenamiento;
@@ -50,8 +50,9 @@ public class Boxeador extends Persona {
 	
 	public void entrenarse() {
 		
-		for(int i = 0; i < cantidadMinutosEntrenamiento; i++) {
-			System.out.println("x");
+		System.out.println("Comienzo entrenamiento"); 
+        for(int i = 0; i < cantidadMinutosEntrenamiento; i++) {
+			System.out.print("x");
 			try {
 				Thread.sleep(500);
 				
@@ -61,8 +62,45 @@ public class Boxeador extends Persona {
 			
 			
 		}
-		
+		System.out.println("Fin entrenamiento");
+        
 	}
+	
+	public void entrenarse(int cantidadMinutos) {
+		
+		System.out.println("Comienzo entrenamiento"); 
+        for(int i = 0; i < cantidadMinutos ; i++) {
+			System.out.print("x");
+			try {
+				Thread.sleep(500);
+				} catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+			 }
+	System.out.println("Fin entrenamiento");
+	}
+		
+	public void entrenarse(int cantidadMinutos, boolean intenso) {
+		
+		System.out.println("\nComienzo entrenamiento"); 
+		String marcaEntrenamiento = intenso?"X":"x";
+		 for(int i = 0; i< cantidadMinutos; i++) {
+			 System.out.print(marcaEntrenamiento);
+			 try {
+					Thread.sleep(500);
+					} catch(InterruptedException e) {
+					e.printStackTrace();
+				}
+			 }
+	System.out.println("Fin entrenamiento");
+	}
+
+	@Override
+	public String identificate() {
+		return "boxeador: " + this.getIdentificacion();
+	}
+	
+	
 	
 	
 }

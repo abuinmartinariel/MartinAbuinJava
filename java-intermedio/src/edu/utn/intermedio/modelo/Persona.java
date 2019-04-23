@@ -2,10 +2,9 @@ package edu.utn.intermedio.modelo;
 
 import java.time.LocalDate;
 
-public abstract class Persona {
+public abstract class Persona implements Comparable<Persona> {
 	
 	private String nombre;
-	private String identificacion;
 	private int anioNacimiento;
 	
 	public int getAnioNacimiento() {
@@ -19,12 +18,6 @@ public abstract class Persona {
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-	public String getIdentificacion() {
-		return identificacion;
-	}
-	public void setIdentificacion(String identificacion) {
-		this.identificacion = identificacion;
 	}
 	
 	public abstract void presentarse();
