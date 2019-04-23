@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
 
-public class Entrenador extends Persona implements Identificable{
+public class Entrenador extends Persona implements Identificable {
 	
 	private int cantidadMaximaBoxeadores;
 	private Collection<Boxeador> boxeadores;
@@ -23,10 +23,10 @@ public class Entrenador extends Persona implements Identificable{
 	
 	public void entrenar() {
 		Random random = new Random();
-		    for (Boxeador boxeador : boxeadores) {
-			boxeador.entrenarse(random.nextInt(30),random.nextBoolean());
-			}
+		for (Boxeador boxeador : boxeadores) {
+			boxeador.entrenarse(random.nextInt(5),random.nextBoolean());
 		}
+	}
 	
 	public boolean asignarBoxeador(Boxeador b) {
 		if(boxeadores.size() >= cantidadMaximaBoxeadores) {
@@ -56,7 +56,6 @@ public class Entrenador extends Persona implements Identificable{
 
 	@Override
 	public String identificate() {
-		
 		return "entrenador: " + this.getIdentificacion();
 	}
 	

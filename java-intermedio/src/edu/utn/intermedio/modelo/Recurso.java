@@ -13,11 +13,7 @@ public class Recurso implements Identificable{
 
 	@Override
 	public String identificate() {
-     return "recurso: " + this.etiqueta;
-	
-	
+		return "recurso: " + this.etiqueta;
 	}
 	
-	
-
 }
