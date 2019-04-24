@@ -20,6 +20,7 @@ public class InscripcionGimnasio {
 		activosGimnasio.add(box);
 		
 		Boxeador box2 = new Boxeador("Pipo");
+		box2.saludar();
 		activosGimnasio.add(box2);
 		box2.setCategoria(Categoria.pesado);
 		box2.setCantidadMinutosEntrenamiento(15);
