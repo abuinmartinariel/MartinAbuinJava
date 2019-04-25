@@ -1,6 +1,7 @@
 package edu.utn.intermedio.modelo;
 
 import java.time.LocalDateTime;
+import java.util.Collection;
 
 public interface Identificable {
 	public String identificate();
@@ -10,7 +11,8 @@ public interface Identificable {
 		LocalDateTime horaActual = LocalDateTime.now();
 		int horario = horaActual.getHour() * 100 + horaActual.getMinute();
 		
-	
+	    Collection<String> coleccion;
+		
 		if(horario >= 600 && horario <= 1200) {
 			System.out.println("Buenos dias");
 		    } else if (horario >= 1200 && horario <= 1959) {
