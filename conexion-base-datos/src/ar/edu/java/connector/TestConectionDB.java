@@ -41,7 +41,7 @@ public class TestConectionDB {
 		
 		if(connection != null)
 		{
-			System.out.println("Yoohoo");
+			System.out.println("Yoohoo !");
 			
 	    } else {
 	    	
